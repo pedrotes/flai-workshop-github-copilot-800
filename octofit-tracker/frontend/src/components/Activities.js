@@ -25,6 +25,7 @@ function Activities() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // Fetch from: https://${REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/activities/
     const activitiesUrl = `${apiBase}/api/activities/`;
     const usersUrl = `${apiBase}/api/users/`;
     console.log('Activities: fetching from', activitiesUrl);

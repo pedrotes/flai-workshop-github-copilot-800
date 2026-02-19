@@ -19,6 +19,7 @@ function Leaderboard() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // Fetch from: https://${REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/leaderboard/
     const leaderboardUrl = `${apiBase}/api/leaderboard/`;
     const usersUrl = `${apiBase}/api/users/`;
     console.log('Leaderboard: fetching from', leaderboardUrl);

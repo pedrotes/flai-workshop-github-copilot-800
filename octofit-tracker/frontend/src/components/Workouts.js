@@ -18,6 +18,7 @@ function Workouts() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // Fetch from: https://${REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/workouts/
     const url = `${apiBase}/api/workouts/`;
     console.log('Workouts: fetching from', url);
     fetch(url)

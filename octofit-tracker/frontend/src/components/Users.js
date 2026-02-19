@@ -28,6 +28,7 @@ function Users() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // Fetch from: https://${REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/users/
     const usersUrl = `${apiBase}/api/users/`;
     const teamsUrl = `${apiBase}/api/teams/`;
     console.log('Users: fetching from', usersUrl);
