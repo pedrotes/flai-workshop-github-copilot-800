@@ -155,3 +155,5 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
 ]
+
+# Database: octofit_db using djongo engine for MongoDB
